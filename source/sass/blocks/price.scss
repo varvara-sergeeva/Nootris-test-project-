@@ -2,16 +2,46 @@
   @media (min-width: $mobile) {
     @include font-options (20px, 24px, normal, $colorSlogan);
   }
+
+  @media (min-width: $middle) {
+    @include font-options (48px, 57px, normal, $colorSlogan);
+  }
 }
 
 .price--regular {
   font-size: 14px;
   color: #adadad;
-  text-decoration: line-through;
   padding-right: 10px;
+  position: relative;
 
   @media (min-width: $mobile) {
     font-size: 18px;
   }
+
+  @media (min-width: $middle) {
+    font-size: 36px;
+    line-height: 43px;
+  }
 }
 
+.price--regular::before {
+  content: "";
+  width: 90%;
+  height: 1px;
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  background-color: #adadad;
+  z-index: 5;
+
+  @media (min-width: $mobile) {
+    right: 15%;
+  }
+
+  @media (min-width: $middle) {
+    width: 100%;
+    right: 5%;
+    top: 50%;
+    height: 2px;
+  }
+}
