@@ -5,4 +5,14 @@
   background-color: $colorBright;
   border: 1px solid $colorBright;
   border-radius: 7px;
+  cursor: pointer;
+
+  @media (min-width: $middle) {
+    @include font-options (18px, 21px, normal, $colorText);
+  }
+
+  @media (min-width: $tablet) {
+    width: 256px;
+    height: 56px;
+  }
 }

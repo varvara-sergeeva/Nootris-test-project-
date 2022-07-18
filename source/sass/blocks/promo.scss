@@ -99,6 +99,7 @@
   }
 
   @media (min-width: $desktop) {
+    top: -20px;
     margin-left: -8px;
     padding-bottom: 0;
     max-width: 700px;
@@ -139,10 +140,10 @@
   }
 
   @media (min-width: $desktop) {
-    top: -14px;
-    left: -70px;
-    width: 125%;
-    height: 125%;
+    top: 25px;
+    left: -90px;
+    width: 115%;
+    height: 115%;
     z-index: 1;
   }
 }
@@ -152,7 +153,6 @@
   height: 100%;
   object-fit: contain;
 }
-
 
 .promo__subtitle {
   @include font-options (16px, 24px, bold, $colorText);
@@ -187,7 +187,7 @@
 
   @media (min-width: $tablet) {
     @include font-options (18px, 21px, normal, $colorText);
-    padding: 0 0 30px 0;
+    padding: 15px 0 30px 0;
   }
 
   @media (min-width: $desktop) {
@@ -213,6 +213,6 @@
 
   @media (min-width: $desktop) {
     margin: -8px;
-    top: -28px;
+    top: -45px;
   }
 }
