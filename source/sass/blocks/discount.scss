@@ -1,0 +1,141 @@
+.discount__container {
+  color: $colorSlogan;
+}
+
+.discount__title {
+  @include font-options (16px, 19px, bold, $colorSlogan);
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+
+  @media (min-width: $mobile) {
+    @include font-options (24px, 28px, bold, $colorSlogan);
+    max-width: 350px;
+  }
+}
+
+.discount__title > strong {
+  color: $colorBright;
+}
+
+.discount__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.discount__features {
+  text-align: center;
+  max-width: 120px;
+
+  @media (min-width: $middle) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.discount__features--left,
+.discount__features--right {
+  position: absolute;
+  top: 110px;
+
+
+  @media (min-width: $mobile) {
+    top: 200px;
+  }
+}
+
+.discount__features--left {
+  left: 10px;
+
+  @media (min-width: $small) {
+    left: 30px;
+  }
+
+  @media (min-width: $mobile) {
+    left: 70px;
+  }
+}
+
+
+.discount__features--right {
+  right: 10px;
+
+  @media (min-width: $small) {
+    right: 30px;
+  }
+
+  @media (min-width: $mobile) {
+    right: 70px;
+  }
+}
+
+.discount__image-additional {
+  display: none;
+
+  @media (min-width: $middle) {
+    display: block;
+  }
+}
+
+.discount__caption {
+  @include font-options (14px, 16px, normal, $colorSlogan);
+
+  @media (min-width: $mobile) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.discount__caption > span {
+  color: $colorBright;
+}
+
+.discount__sale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discount__price {
+  padding: 30px 0;
+}
+
+.discount__product-image {
+
+}
+
+.discount__bonus {
+  min-width: 180px;
+  margin: 0;
+  padding-top: 30px;
+
+  @media (min-width: $mobile) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.discount__note {
+  color: $colorBright;
+  margin: 0;
+  padding: 20px 0;
+
+  @media (min-width: $mobile) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 30px;
+  }
+}
+
+.discount__button {
+  margin-bottom: 50px;
+
+  @media (min-width: $mobile) {
+    margin-bottom: 70px;
+  }
+}

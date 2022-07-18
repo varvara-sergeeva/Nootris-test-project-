@@ -1,0 +1,16 @@
+/*Добавление глобальных стилей*/
+@import "global/font.scss";
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+@import "global/mixin.scss";
+/*Блоки общие всех страниц Header*/
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/menu.scss";
+/*Блоки index.html*/
+@import "blocks/main.scss";
+@import "blocks/promo.scss";
+@import "blocks/discount.scss";
+@import "blocks/price.scss";
+@import "blocks/button.scss";

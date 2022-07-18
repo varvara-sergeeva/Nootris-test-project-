@@ -1,0 +1,8 @@
+.button {
+  @include font-options (14px, 17px, bold, $colorText);
+  width: 100%;
+  height: 51px;
+  background-color: $colorBright;
+  border: 1px solid $colorBright;
+  border-radius: 7px;
+}

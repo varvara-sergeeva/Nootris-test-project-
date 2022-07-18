@@ -1,0 +1,17 @@
+.price {
+  @media (min-width: $mobile) {
+    @include font-options (20px, 24px, normal, $colorSlogan);
+  }
+}
+
+.price--regular {
+  font-size: 14px;
+  color: #adadad;
+  text-decoration: line-through;
+  padding-right: 10px;
+
+  @media (min-width: $mobile) {
+    font-size: 18px;
+  }
+}
+

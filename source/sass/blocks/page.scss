@@ -1,0 +1,29 @@
+//* {
+//  background: #000 !important;
+//  color: #0f0 !important;
+//  outline: solid #f00 1px !important;
+//}
+
+.page {
+  margin: 0;
+  font-family: $ff;
+  background-color: $colorText;
+}
+
+.page--burger {
+  overflow: hidden;
+}
+
+.page--burger > .page__main {
+  filter: blur(3px);
+}
+
+.page__header {
+  background-color: $colorText;
+  height: 60px;
+  padding: 0 5%;
+
+  @media (min-width: $middle) {
+    height: 80px;
+  }
+}

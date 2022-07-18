@@ -1,0 +1,218 @@
+.promo {
+  background-color: $colorBack;
+}
+
+.promo__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: auto / 5% 1fr 5%;
+
+  @media (min-width: $middle) {
+    grid-template: auto minmax(auto, 450px) auto auto auto / 5% 1fr 5%;
+  }
+
+  @media (min-width: $tablet) {
+    grid-template: minmax(auto, 270px) minmax(auto, 220px) minmax(auto, 50px) minmax(auto, 100px)/ 5% 55% 35% 5%;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template: minmax(auto, 440px) minmax(auto, 200px) minmax(auto, 50px) minmax(auto, 100px)/ 5% 55% 35% 5%;
+  }
+}
+
+.promo__slogan,
+.promo__title,
+.promo__subtitle,
+.promo__description {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $middle) {
+    text-align: left;
+  }
+
+  @media (min-width: $tablet) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.promo__slogan {
+  @include font-options (32px, 36px, bold, $colorSlogan);
+  text-transform: uppercase;
+  padding: 20px 0;
+
+  @media (min-width: $mobile) {
+    order: 1;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $middle) {
+    @include font-options (64px, 76px, bold, $colorSlogan);
+    padding-left: 40px;
+  }
+
+  @media (min-width: $tablet) {
+    @include font-options (104px, 112px, bold, $colorSlogan);
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    @include font-options (144px, 152px, bold, $colorSlogan);
+    margin-left: -6px;
+    padding-top: 105px;
+  }
+}
+
+.promo__title {
+  @include font-options (16px, 24px, normal, $colorText);
+  padding-bottom: 15px;
+
+  @media (min-width: $mobile) {
+    order: 3;
+    position: relative;
+    top: -30px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $middle) {
+    @include font-options (24px, 24px, normal, $colorText);
+    justify-content: start;
+    margin-left: 45px;
+    top: -100px;
+  }
+
+  @media (min-width: $tablet) {
+    top: 0;
+    margin-left: 5px;
+    padding-top: 20px;
+    line-height: 28px;
+    max-width: 600px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -8px;
+    padding-bottom: 0;
+    max-width: 700px;
+  }
+}
+
+.promo__title > strong {
+  font-weight: normal;
+}
+
+.prtomo__product-image {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-self: end;
+  position: relative;
+  left: 5%;
+
+  @media (min-width: $mobile) {
+    order: 2;
+  }
+
+  @media (min-width: $middle) {
+    position: relative;
+    top: -70px;
+  }
+
+  @media (min-width: $tablet) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    top: 0;
+    left: -10px;
+    width: 110%;
+  }
+
+  @media (min-width: $desktop) {
+    top: -14px;
+    left: -70px;
+    width: 125%;
+    height: 125%;
+    z-index: 1;
+  }
+}
+
+.prtomo__product-image img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.promo__subtitle {
+  @include font-options (16px, 24px, bold, $colorText);
+  text-transform: uppercase;
+  padding-top: 20px;
+
+  @media (min-width: $mobile) {
+    order: 4;
+  }
+
+  @media (min-width: $middle) {
+    @include font-options (32px, 36px, bold, $colorText);
+  }
+
+  @media (min-width: $tablet) {
+    @include font-options (36px, 42px, bold, $colorText);
+  }
+}
+
+.promo__description {
+  @include font-options (12px, 14px, normal, $colorText);
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+  @media (min-width: $mobile) {
+    order: 5;
+  }
+
+  @media (min-width: $middle) {
+    @include font-options (16px, 20px, normal, $colorText);
+  }
+
+  @media (min-width: $tablet) {
+    @include font-options (18px, 21px, normal, $colorText);
+    padding: 0 0 30px 0;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 350px;
+  }
+}
+
+.promo__subtitle,
+.promo__description {
+  position: relative;
+  top: -15px;
+
+  @media (min-width: $middle) {
+    margin-left: 45px;
+    position: relative;
+    top: -40px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-left: 5px;
+    top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: -8px;
+    top: -28px;
+  }
+}

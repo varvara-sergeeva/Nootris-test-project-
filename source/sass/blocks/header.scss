@@ -1,0 +1,41 @@
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $small) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  flex-basis: 20%;
+  padding-top: 5px;
+
+
+}
+
+.header__navigation {
+  flex-basis: 70%;
+
+  @media (min-width: $small) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $mobile) {
+    flex-basis: 70%;
+  }
+
+  @media (min-width: $middle) {
+    flex-basis: 80%;
+  }
+}
