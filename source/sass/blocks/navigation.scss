@@ -22,6 +22,7 @@
   position: relative;
   order: 3;
   flex-basis: 20%;
+  cursor: pointer;
 
   @media (min-width: $mobile) {
     flex-basis: auto;
@@ -40,6 +41,13 @@
   top: 10px;
   border-radius: 1px;
   transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.navigation__burger:hover span,
+.navigation__burger:hover::before,
+.navigation__burger:hover::after {
+  background-color: $colorBright;
 }
 
 .navigation__burger::before,
@@ -62,18 +70,21 @@
   bottom: 8px;
 }
 
+.navigation__burger.navigation__burger--active::before,
+.navigation__burger.navigation__burger--active::after {
+  left: 13px;
+  width: 25px;
+  background-color: $colorBright;
+}
+
 .navigation__burger.navigation__burger--active::before {
   transform: rotate(45deg);
   top: -4px;
-  left: 13px;
-  width: 25px;
 }
 
 .navigation__burger.navigation__burger--active::after {
   transform: rotate(-45deg);
   bottom: 2px;
-  left: 13px;
-  width: 25px;
 }
 
 .navigation__burger.navigation__burger--active span {
@@ -170,6 +181,14 @@
   @media (min-width: $desktop) {
     display: block;
   }
+}
+
+.navigation__phone:hover {
+  color: $colorBright;
+}
+
+.navigation__phone:active {
+  color: #ADADAD;
 }
 
 .navigation__cart {

@@ -41,6 +41,14 @@
   }
 }
 
+.menu__item:hover {
+  color: $colorBright;
+}
+
+.menu__item:active {
+  color: #ADADAD;
+}
+
 .menu__item > a {
   text-decoration: none;
   color: inherit;

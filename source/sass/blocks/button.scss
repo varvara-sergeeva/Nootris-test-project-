@@ -16,3 +16,16 @@
     height: 56px;
   }
 }
+
+.button:hover {
+  border: 2px solid $colorBright;
+  background-color: $colorText;
+  color: $colorBright;
+  transition-duration: 0.3s;
+}
+
+.button:active {
+  color: $colorBack;
+  font-size: 19px;
+  transition-duration: 0.3s;
+}
