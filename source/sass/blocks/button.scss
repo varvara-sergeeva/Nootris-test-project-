@@ -26,6 +26,10 @@
 
 .button:active {
   color: $colorBack;
-  font-size: 19px;
   transition-duration: 0.3s;
+  font-size: 16px;
+
+  @media (min-width: $middle) {
+    font-size: 19px;
+  }
 }

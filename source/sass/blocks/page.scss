@@ -15,7 +15,8 @@
 }
 
 .page--burger > .page__main {
-  filter: blur(3px);
+  filter: blur(2px);
+  transition: all 0.2s ease 0s;
 }
 
 .page__header {
