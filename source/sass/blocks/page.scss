@@ -1,17 +1,7 @@
-//* {
-//  background: #000 !important;
-//  color: #0f0 !important;
-//  outline: solid #f00 1px !important;
-//}
-
 .page {
   margin: 0;
   font-family: $ff;
   background-color: $colorText;
-}
-
-.page--burger {
-  overflow: hidden;
 }
 
 .page--burger > .page__main {

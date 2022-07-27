@@ -1,7 +1,5 @@
 .discount {
   color: $colorSlogan;
-
-
 }
 
 .discount__title {
@@ -52,7 +50,11 @@
 
 .discount__features {
   text-align: center;
-  max-width: 120px;
+  max-width: 90px;
+
+  @media (min-width: $mobile) {
+    max-width: 110px;
+  }
 
   @media (min-width: $middle) {
     display: flex;
@@ -67,7 +69,6 @@
 .discount__features--right {
   position: absolute;
   top: 110px;
-
 
   @media (min-width: $mobile) {
     top: 200px;
@@ -128,9 +129,17 @@
 }
 
 .discount__caption {
-  @include font-options (14px, 16px, normal, $colorSlogan);
+  //@include font-options (14px, 16px, normal, $colorSlogan);
+  //overflow: hidden;
+  display: none;
+
+  @media (min-width: $small) {
+    @include font-options (14px, 16px, normal, $colorSlogan);
+    display: inline;
+  }
 
   @media (min-width: $mobile) {
+    display: inline;
     font-size: 18px;
     line-height: 24px;
   }
