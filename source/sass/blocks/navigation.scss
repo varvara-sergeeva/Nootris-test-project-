@@ -28,10 +28,6 @@
     flex-basis: 11%;
   }
 
-  //@media (min-width: $mobile) {
-  //  flex-basis: auto;
-  //}
-
   @media (min-width: $tablet) {
     display: none;
   }
@@ -104,7 +100,7 @@
   }
 }
 
-.navigation__options--burger {
+.navigation__burger--active + .navigation__options {
   display: block;
   position: absolute;
   margin: 0;
@@ -202,7 +198,7 @@
 }
 
 .navigation__phone:active {
-  color: #ADADAD;
+  color: #adadad;
 }
 
 .navigation__cart {
